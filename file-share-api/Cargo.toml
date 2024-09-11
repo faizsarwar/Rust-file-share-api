@@ -1,0 +1,15 @@
+[package]
+name = "file-share-api"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+actix-web = "4.0"
+tokio = { version = "1", features = ["full"] }
+sqlx = { version = "0.6", features = ["postgres", "runtime-tokio-native-tls", "uuid"] }
+uuid = { version = "1", features = ["v4", "serde"] }
+anyhow = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+bytes = "1.1"
+futures = "0.3"
